@@ -14,7 +14,7 @@ public int size()
 public void push(int data) 
 {
    if (isFull())
-   System.out.println("Stack is Overflow. Not Possible to insert in Full stack");
+   System.out.println("Stack is Overflow. Not possible to insert in Full stack");
    else{
       stack[++top] = data;
       System.out.println("Element is inserted");
