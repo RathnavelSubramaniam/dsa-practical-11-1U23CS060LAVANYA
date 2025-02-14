@@ -11,21 +11,44 @@ public int size()
 {
     return (top+1);
 }
-public void push() 
+public void push(int data) 
 {
-// TYPE YOUR CODE HERE
+   if(isFull())
+   {
+   System.out.println("Stack is Overflow. Not Possible to insert in Full stack");
+   }
+   else{
+      top++;
+      stack[top]=data;
+      System.out.println("element is inserted");
+   }
 }
 public int pop() 
 {
-// TYPE YOUR CODE HERE
+  int data=-1;
+  if(isEmpty())
+  {
+    System.out.println("Stack is Underflow. No elements to be popped in Empty Stack");
+  }
+  else{
+    stack[top]=data;
+    top--;
+  }
+  return data;
 }
 public boolean isFull()
 {
-// TYPE YOUR CODE HERE
+  return (size()==capacity);
 }
 public boolean isEmpty()
 {
-    // TYPE YOUR CODE HERE
+  if(top<0)
+  {
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 public void display()
 {
