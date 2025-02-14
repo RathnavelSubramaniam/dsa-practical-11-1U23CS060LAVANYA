@@ -39,13 +39,7 @@ public boolean isFull()
 }
 public boolean isEmpty()
 {
-  if(top<0)
-  {
-    return true;
-  }
-  else{
-    return false;
-  }
+  return (top<0);
 }
 public void display()
 {
